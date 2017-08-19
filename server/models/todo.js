@@ -6,10 +6,12 @@ const Todo = mongoose.model('Todo', {
 		required: true
 	},
 	completed: {
-		type: Boolean
+		type: Boolean,
+		default: false
 	},
 	completedAt: {
-		type: Number
+		type: Number,
+		default: null
 	}
 });
 
